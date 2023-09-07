@@ -14,6 +14,7 @@ body{
     padding: 20px;
     font-family: 'Borel', cursive;
     font-family: 'Raleway', sans-serif;
+    background-color:#f2dfff;
 }
 
 h1{
@@ -22,6 +23,23 @@ h1{
     font-size: 4.0rem;
     font-family: 'Borel', cursive;
 }
+
+  /* Agora, colocando um degradê */
+  .gradient {
+    /* Primeiro passo: definir um degradê como fundo */
+    background-image: linear-gradient(to bottom, #8404D9, #7404BF, #460273, #48048C, #060126);
+    
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+  
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: white;
+}
+
 
 ol{
     display: flex;
@@ -32,7 +50,8 @@ ol{
     top: 0;
     left: 0;
     right: 0;
-    background:linear-gradient(180deg, #BFBFBF,#8C8C8C,#595959,#262626,#0D0D0D);
+    background-image: linear-gradient(45deg, #8404D9, #7404BF, #460273, #48048C, #060126);
+    /* background:linear-gradient(180deg, #BFBFBF,#8C8C8C,#595959,#262626,#0D0D0D); */
     color: white;
 
 }
